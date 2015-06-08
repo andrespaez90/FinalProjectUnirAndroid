@@ -51,7 +51,6 @@ public class PersistManager extends SQLiteOpenHelper {
             u.setName(cursor.getString(0) );
             return u;
         }
-
     }
 
     public String Delete(String id){
