@@ -57,10 +57,8 @@ public class ListActivity extends ActionBarActivity {
 
     private void createList(ArrayList<User> list){
 
-        //Inicializacion RecyclerView
         lista.setHasFixedSize(true);
         final RecyckeViewAdapter adaptador = new RecyckeViewAdapter(list,this);
-
         lista.setAdapter(adaptador);
         lista.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
     }
@@ -70,8 +68,6 @@ public class ListActivity extends ActionBarActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu items for use in the action bar
-
         getMenuInflater().inflate(R.menu.menu_list, menu);
 
         SearchView searchview = (SearchView)(menu.findItem(R.id.list_action_search).getActionView());

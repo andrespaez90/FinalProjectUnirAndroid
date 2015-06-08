@@ -62,7 +62,6 @@ public class MainActivity extends ActionBarActivity {
             Intent intent = new Intent(this, StartActivity.class);
             startActivityForResult(intent, ActivityKeys.START_ACTIVITY.ordinal());
         }
-
         return super.onOptionsItemSelected(item);
     }
 
